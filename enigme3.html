@@ -41,6 +41,28 @@
       max-width: 600px;
       text-align: center;
     }
+
+    .esoteric-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #1f1f1f, #4b0082);
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: 16px;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(75, 0, 130, 0.8);
+    }
+
+    .esoteric-button:hover {
+      background: #4b0082;
+      color: #ffd700;
+      box-shadow: 0 0 15px #ffd700;
+      border-color: #ffd700;
+    }
   </style>
 </head>
 <body>
@@ -48,6 +70,11 @@
   <input type="text" id="input" placeholder="Entrez les mots-clés">
   <button onclick="checkAnswer()">Valider</button>
   <div id="result"></div>
+
+  <!-- 🔮 Bouton ésotérique vers YouTube -->
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" class="esoteric-button">
+    &#9765; Écouter Beatles en reverse
+  </a>
 
   <script>
     function checkAnswer() {
